@@ -10,14 +10,25 @@ Claude Code ↔ server_http.py (MCP + HTTP :3055) ↔ Plugin FigSync (Figma)
 
 ## Instalação
 
+### macOS (recomendado)
+
 ```bash
-pip3 install git+https://github.com/JeffersonSantana/figsync.git
+brew install pipx
+pipx install git+https://github.com/JeffersonSantana/figsync.git
 ```
 
-Para atualizar:
+### Windows / Linux
 
 ```bash
-pip3 install --upgrade git+https://github.com/JeffersonSantana/figsync.git
+pip install git+https://github.com/JeffersonSantana/figsync.git
+```
+
+### Atualizar
+
+```bash
+pipx upgrade figsync
+# ou
+pip install --upgrade git+https://github.com/JeffersonSantana/figsync.git
 ```
 
 ## Uso
