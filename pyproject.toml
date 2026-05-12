@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "figsync"
+version = "0.1.0"
+description = "Servidor MCP + HTTP local para controlar o Figma via Claude Code"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+figsync = "figsync.server_http:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/figsync"]
